@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+
+header {
+    background: url("../img/newspapers-ripped.jpg") no-repeat center/cover;
+    border-bottom: .5rem solid #B0D8FB;
+
+    h1 {
+        padding: 13rem 0 3rem;
+        font-family: "Quintessential";
+        font-size: 5rem;
+        text-align: center;
+        text-transform: capitalize;
+
+        @media screen and (min-width:960px) {
+            padding: 3rem 0;
+        }
+    }
+    
+    nav {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+
+        @media screen and (min-width:960px) {
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+    
+        button {
+            padding: 0.5rem 3rem;
+            background-color: #B0D8FB;
+            border: .2rem solid $main-dark;
+            border-radius: .8rem;
+            transition: .3s all ease-in-out;
+
+            &:hover {
+                color: $white-medium;
+                background-color: $blue-medium;
+                border: .2rem solid $white-medium;
+            }
+            &.active {
+                color: $white-medium;
+                background-color: $blue-medium;
+                border: .2rem solid $white-medium;
+            }
+        }
+    }
+}

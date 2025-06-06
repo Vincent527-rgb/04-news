@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API | News</title>
+
+  <!-- ---- Links fonts - Comfortaa, Righteous, REM, EB Garamond, Libre Baskerville, Quintessential and Twinkle Star ---- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quintessential&family=REM:ital,wght@0,100..900;1,100..900&family=Righteous&family=Twinkle+Star&display=swap" rel="stylesheet">
+  
+  <!-- ---- Links to files -->
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <script defer src="./scripts/main.js"></script>
+
+  <!-- ---- Link font awesome ---- -->
+  <script src="https://kit.fontawesome.com/338ba07762.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1 id="top">The news horizon</h1>
+    <nav>
+      <button class="latest active">Latest</button>
+      <button data-category="world">World</button>
+      <button data-category="business">Business</button>
+      <button data-category="environment">Environment</button>
+      <button data-category="science">Science</button>
+      <button data-category="technology">Technology</button>
+      <button data-category="entertainment">Entertainment</button>
+      <button data-category="sports">Sports</button>
+      <button data-category="top">Top</button>
+    </nav>
+  </header>
+  <main>
+    <form action="#">
+      <!-- <label for="source-name">Search: </label> -->
+      <input type="text" id="source-name" placeholder="Enter your keywords">
+      <div class="btn-search"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
+    </form>
+
+    <div class="pagina">
+      <button class="previous">Previous</button>
+      <span class="current-page">1</span>
+      <button class="next">Next</button>
+    </div>
+
+    <div class="display-news">
+      <article class="article">
+        <!--  -->
+        <a href="" class="article__title"><h3>Titre de mon article</h3></a>
+        <small class="article__date">Date de publication</small>
+        <a href="" class="article__img"><img src="" alt=""></a> <!-- Insérer l'image clic -->
+        <p class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate blanditiis corporis, quasi dolor eligendi sequi fugit doloribus ipsa dignissimos libero ullam illo ex velit nostrum ipsum voluptates totam culpa?</p>
+        <cite class="article__source">Source name : <span class="url"></span></cite>
+      </article>
+      <article class="article">
+        <!--  -->
+        <a href="" class="article__title"><h3>Titre de mon article</h3></a>
+        <small class="article__date">Date de publication</small>
+        <a href="" class="article__img"><img src="" alt=""></a> <!-- Insérer l'image clic -->
+        <p class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate blanditiis corporis, quasi dolor eligendi sequi fugit doloribus ipsa dignissimos libero ullam illo ex velit nostrum ipsum voluptates totam culpa?</p>
+        <cite class="article__source">Source name : <span class="url"></span></cite>
+      </article>
+      <article class="article">
+        <!--  -->
+        <a href="" class="article__title"><h3>Titre de mon article</h3></a>
+        <small class="article__date">Date de publication</small>
+        <a href="" class="article__img"><img src="" alt=""></a> <!-- Insérer l'image clic -->
+        <p class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate blanditiis corporis, quasi dolor eligendi sequi fugit doloribus ipsa dignissimos libero ullam illo ex velit nostrum ipsum voluptates totam culpa?</p>
+        <cite class="article__source">Source name : <a href="http://127.0.0.1:5500/index.html" class="url">http://127.0.0.1:5500/index.html</a></cite>
+      </article>
+    </div>
+    <aside class="B3">
+      <a class="btn" href="#top">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
+        </svg>
+      </a>
+    </aside>
+  </main>
+  <footer>
+    <div class="display-ip-address"></div>
+    <div class="display-wheather"></div>
+    <div class="display-market"></div>
+  </footer>
+</body>
+</html>
